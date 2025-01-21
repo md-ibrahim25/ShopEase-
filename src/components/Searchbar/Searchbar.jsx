@@ -1,14 +1,14 @@
 import React from "react";
-import { SearchIcon } from "../ui/SearchIcon";
+import { SearchIcon } from "../ui/icons/SearchIcon";
 import { InputBar } from "../ui/InputBar";
-import { CloseIcon } from "../ui/CloseIcon";
+import { CloseIcon } from "../ui/icons/CloseIcon";
+import { Button } from "../ui/button";
 
 function Searchbar() {
   return (
-    <div className="m-auto flex items-center space-x-4">
-      <SearchIcon width={30} height={30} />
-      <InputBar className="max-w-[400px]" />
-      <CloseIcon width={16} height={16}/>
+    <div className="flex max-w-[800px] items-center space-x-4">
+      <InputBar className="max-w-[600px] flex-grow" />
+      <Button variant="">Search</Button>
     </div>
   );
 }
